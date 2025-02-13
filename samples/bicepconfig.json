@@ -1,0 +1,16 @@
+{
+  "experimentalFeaturesEnabled": {
+    "extensibility": true,
+    "localDeploy": true
+  },
+  "cloud": {
+    "credentialPrecedence": [
+      "Environment"
+    ],
+    "currentProfile": "AzureCloud"
+  },
+  "extensions": {
+    "local": "br:bicepextdemo.azurecr.io/extensions/local:0.1.1"
+  },
+  "implicitExtensions": []
+}
