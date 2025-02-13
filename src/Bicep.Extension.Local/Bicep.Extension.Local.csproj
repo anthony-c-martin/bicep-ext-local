@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Azure.Bicep.Local.Extension" Version="0.32.4" />
+    <PackageReference Include="Azure.Bicep.Local.Extension" Version="0.33.93" />
     <PackageReference Include="Grpc.AspNetCore" Version="2.63.0" />
   </ItemGroup>
 </Project>
