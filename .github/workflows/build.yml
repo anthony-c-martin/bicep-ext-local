@@ -41,7 +41,9 @@ jobs:
         uses: actions/setup-dotnet@v4
   
       - name: Intall Bicep
-        run: az bicep install --version v0.30.23
+        run: |
+          az config set bicep.use_binary_from_path=false
+          az bicep install
         
       - name: Publish Locally
         run: |

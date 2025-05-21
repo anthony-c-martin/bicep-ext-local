@@ -10,7 +10,7 @@
     "currentProfile": "AzureCloud"
   },
   "extensions": {
-    "local": "br:bicepextdemo.azurecr.io/extensions/local:0.1.1"
+    "local": "br:bicepextdemo.azurecr.io/extensions/local:0.1.2"
   },
   "implicitExtensions": []
 }
