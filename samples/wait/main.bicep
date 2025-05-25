@@ -1,3 +1,5 @@
+targetScope = 'local'
+
 extension local
 
 resource wait 'Wait' = {
