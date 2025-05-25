@@ -58,7 +58,7 @@ jobs:
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
   
-      - name: Install CLI
+      - name: Intall Bicep
         run: |
           az config set bicep.use_binary_from_path=false
           az bicep install
