@@ -3,16 +3,16 @@ targetScope = 'local'
 extension local
 
 param name string
-param platform 'bash' | 'powershell'
+param platform 'Bash' | 'PowerShell'
 
-resource sayHelloWithBash 'Script' = if (platform == 'bash') {
-  type: 'bash'
+resource sayHelloWithBash 'Script' = if (platform == 'Bash') {
+  type: 'Bash'
   script: replace(loadTextContent('./script.sh'), '$INPUT_NAME', name)
 }
 
-resource sayHelloWithPowerShell 'Script' = if (platform == 'powershell') {
-  type: 'powershell'
+resource sayHelloWithPowerShell 'Script' = if (platform == 'PowerShell') {
+  type: 'PowerShell'
   script: replace(loadTextContent('./script.ps1'), '$INPUT_NAME', name)
 }
 
-output stdout string = (platform == 'bash') ? sayHelloWithBash.stdout : sayHelloWithPowerShell.stdout
+output stdout string? = (platform == 'Bash') ? sayHelloWithBash.?stdOut : sayHelloWithPowerShell.?stdOut
