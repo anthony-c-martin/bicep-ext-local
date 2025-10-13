@@ -32,8 +32,14 @@ Run the deployment.
 ```
 
 To enable verbose tracing, run the following beforehand.
+
 ```sh
 export BICEP_TRACING_ENABLED=true
+```
+
+When using PowerShell, use the snippet below to enable verbose tracing:
+```pwsh
+$env:BICEP_TRACING_ENABLED = "true"
 ```
 
 ## Publishing to a registry
